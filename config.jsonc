@@ -20,7 +20,7 @@
 	    "group/mullvad",
         "inhibitor",
 	    "sway/language",
-        "wireplumber",
+        "group/wireplumber",
         "upower",
         "privacy",
 	    "custom/panelactivate"
@@ -51,9 +51,6 @@
 	    "min-length": 3,
 	    "on-click": "bluetooth toggle",
         "tooltip": false
-        },
-    "custom/arrow": {
-        "format": ""
         },
     "custom/mullvad": {
         "exec": "mullvad status | head -n 1",
@@ -90,48 +87,58 @@
             ]
         },
     "group/internet": {
-        "orientation": "inherit",
         "drawer": {
             "transition-duration": 250,
-            "children-class": "info-hidden",
             "transition-left-to-right": false
-            },
+             },
         "modules": [
             "network",
             "network#drawer-internet"
-            ]
+            ],
+        "orientation": "inherit"
         },
     "group/mullvad": {
-        "orientation": "inherit",
         "drawer": {
             "transition-duration": 250,
-            "children-class": "hidden",
-            "transition-left-to-right": false
+            "transition-left-to-right": false,
+            "children-class": "hidden"
             },
         "modules": [
             "network#mullvad",
             "custom/mullvad"
-            ]
+            ],
+        "orientation": "inherit"
+       },
+    "group/wireplumber": {
+         "drawer": {
+            "transition-duration": 250,
+            "transition-left-to-right": false
+            },
+        "modules": [
+            "wireplumber",
+            "wireplumber#drawer"
+            ],
+        "orientation": "inherit"
         },
     "network": {
         "format": "{}",
         "format-wifi": "", 
         "format-ethernet": "{ifname}",
-        "format-disconnected": "", //An empty format will hide the module.
+        "format-disconnected": "",
         "format-disconnected": "",
         "interface": "wlp54s0",
-        "interval": 60,
+        "interval": 3600, //polling seemingly does nothing
 	    "min-length": 3,
         "tooltip": false
         },
     "network#drawer-internet": {
-        "interface": "wlp54s0",
         "format": "{ifname}",
         "format-wifi": "{essid}", 
         "format-ethernet": "{ifname}",
-        "format-disconnected": "{}", //An empty format will hide the module.
         "format-disconnected": "{}",
-	    "min-length":3,
+        "interface": "wlp54s0",
+        "interval": 120,
+        "min-length":3,
         "tooltip-format": "{}",
         "tooltip-format-wifi": "{essid}\rSignal Strength: {signalStrength}%",
         "tooltip-format-ethernet": "{ifname}",
@@ -152,7 +159,7 @@
         "icon-size": 18,
         "transition-duration": 250,
         "modules": [
-	   {
+            {
            "type": "screenshare",
            "tooltip": true,
            "tooltip-icon-size": 24
@@ -162,7 +169,7 @@
            "tooltip": true,
            "tooltip-icon-size": 24
            }
-           ]
+        ]
     },
     "sway/workspaces": {
         "disable-scroll-wraparound": true,
@@ -181,7 +188,9 @@
         },
     "sway/language": {
     	"format": "{short}",
-        "min-length": 3
+        "min-length": 3,
+        "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
+        "tooltip": false
         },
     "sway/mode": {},
     "sway/scratchpad": {
@@ -189,13 +198,17 @@
         "show-empty": false,
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
+    },
+    "tray": {
+        "spacing": 9,
+        "show-passive-items": true
         },
     "upower": {
-        "format": "{}",
+        "format": "",
         "format-alt": "{percentage} {time}",
-	    "native-path": "BAT0",
-        "icon-size": 17,
         "hide-if-empty": false,
+        "icon-size": 17,
+ 	    "native-path": "BAT0",
         "tooltip": true,
         "tooltip-padding": 20,
         "tooltip-spacing": 10
@@ -203,60 +216,12 @@
     "wireplumber": {
         "format": " {volume}%",
         "format-muted": "",
+        "max-volume": 100,
         "min-length": 8,
         "on-click": "helvum"
-        }
-},
-{
-    "name": "panel",
-    "id": "bar-0",
-    "ipc": true,
-    "layer": "top",
-    "passthrough": false,
-    "position": "top",
-    "exclusive": false,
-    "margin-top": 10,
-    "margin-left": 1500,
-    "margin-right": 10,
-    "margin-bottom": 750,
-    "reload_style_on_change": true,
-    "width": 200,
-
-    "modules-right": [
- 	    "bluetooth#panel",
-        "custom/upower",
-        "wireplumber#panel",
-        "custom/notifications"
-        ],
-
-    "bluetooth#panel": {
-        "justify": "left",
-        "format": " <b>Bluetooth</b>",
-    	"format-connected": "<b>Bluetooth</b>\rDevices: {num_connections}\r",
-	    "on-click": "bluetooth toggle"
         },
-    "custom/notifications": {
-        "escape": true,
-        "exec": "~/.config/waybar/modules/notification-center.fish",
-        "format": "{}asdf",
-        "return-type": "json",
-        "signal": 3,
-        "on-click": "~/.config/waybar/modules/notification-center.fish"
-        },
-    "custom/upower": {
-	    "interval": 10,
-	    "exec": "~/.config/waybar/modules/battery-levels.sh",
-	    "tooltip": true,
-	    "format": "<b>Battery</b>\n{}",
-	    "return-type": "json",
-	    "escape": false
-	    },
-    "wireplumber#panel": {
-        "format": "<b>Audio</b>\r{node_name}   {volume}%",
-        "format-muted": "{node_name}{volume}%",
-        "on-click": "helvum"
+    "wireplumber#drawer": {
+        "format": "{node_name}"
         }
-
 }
 ]
-
