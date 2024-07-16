@@ -1,4 +1,4 @@
-@define-color base-bg #446678;
+@define-color base-bg #396073;
 @define-color base-text #ffffff;
 @define-color highlight-bg shade(@base-bg, 1.7);
 @define-color highlight-border shade(@base-bg, 6);
