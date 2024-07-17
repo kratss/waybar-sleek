@@ -12,4 +12,4 @@ Need only edit the base color, and the theme will adapt secondary colors
 
 Feedback
 Animates on hover to communicate interactability
-![Video](right-module.mkv)
+![Video](docs/right-module.mkv)
