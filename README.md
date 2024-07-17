@@ -8,8 +8,7 @@ Minimal design that expands contextually to show relevant information \
 ![Expanding wireplumber](docs/pink_right_hover_wireplumber.png)
 
 # Easy to configure
-Need only edit the base color in `style.css`, and the theme will adapt secondary colors \
-`@define-color base-bg #RRGGBB` \
+Edit the base color `@define-color base-bg #RRGGBB` in `style.css`, and the theme will adapt secondary colors \
 ![Yellow theme](docs/yellow_right_hover_bluetooth.png)
 ![Blue theme](docs/blue_right_hover_bluetooth.png)
 ![Pink theme](docs/pink_right_hover_bluetooth.png)
