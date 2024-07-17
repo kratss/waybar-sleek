@@ -1,3 +1,4 @@
+A featureful, unobtrusive waybar configuration designed to be easily tweaked
 ![Waybar desktop](docs/pink_desktop.png)
 
 # Minimal
