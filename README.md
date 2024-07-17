@@ -9,7 +9,7 @@ Minimal design that expands contextually to show relevant information \
 
 # Easy to configure
 Need only edit the base color, and the theme will adapt secondary colors \
-@define-color base-bg #RRGGBB
+@define-color base-bg #RRGGBB \
 ![Yellow theme](docs/yellow_right_hover_bluetooth.png)
 ![Blue theme](docs/blue_right_hover_bluetooth.png)
 ![Pink theme](docs/pink_right_hover_bluetooth.png)
