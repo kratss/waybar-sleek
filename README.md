@@ -1,5 +1,9 @@
 A featureful, unobtrusive waybar configuration designed to be easily tweaked and customized \
-![Waybar desktop](docs/pink_desktop.webp)
+
+# Animated
+Animates on hover to communicate interactability \
+Fast but smooth transitions feel natural without being slow \
+![Video](docs/right-module-2.webp)
 
 # Minimal
 Minimal design that expands contextually to show relevant information \
@@ -13,7 +17,5 @@ Edit the base color `@define-color base-bg #RRGGBB` in `style.css`, and the them
 ![Blue theme](docs/blue_right_hover_bluetooth.webp)
 ![Pink theme](docs/pink_right_hover_bluetooth.webp)
 
-# Animated
-Animates on hover to communicate interactability \
-Fast but smooth transitions feel natural without being slow \
-![Video](docs/right-module.webp)
+![Waybar desktop](docs/pink_desktop.webp)
+
