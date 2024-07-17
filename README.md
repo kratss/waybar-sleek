@@ -15,5 +15,5 @@ Need only edit the base color, and the theme will adapt secondary colors \
 
 # Animated
 Animates on hover to communicate interactability \
-Fast but smooth transitions feel natural without feeling slow
+Fast but smooth transitions feel natural without feeling slow \
 ![Video](docs/right-module.mkv)
