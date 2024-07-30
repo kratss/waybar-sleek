@@ -15,7 +15,9 @@ This status bar features a minimalist design that expands contextually to displa
 ![Expanding wireplumber](docs/pink_right_hover_wireplumber.webp)
 
 # Easy Configuration
-Edit the base color `@define-color base-bg #RRGGBB` in `style.css`, and the theme will adapt secondary colors \
+Simply edit the base color in style.css using the line @define-color base-bg #RRGGBB, and interactive colors will always match. Tailor your status bar to match your personal style effortlessly.
+
+Yellow Theme
 ![Yellow theme](docs/yellow_right_hover_bluetooth.webp)
 ![Blue theme](docs/blue_right_hover_bluetooth.webp)
 ![Pink theme](docs/pink_right_hover_bluetooth.webp)
