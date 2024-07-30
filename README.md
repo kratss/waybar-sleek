@@ -2,7 +2,7 @@
 Introducing a feature-rich and unobtrusive Waybar configuration designed for seamless customization and effortless tweaking. This status bar enhances your desktop experience while maintaining a clean aesthetic.eful, unobtrusive waybar configuration designed to be easily tweaked and customized \
 
 # Animated
-Popular status bar options like swaybar and yambar, and most waybar configurations, don't communicate interactivity. should respond to mouse movements, providing a polished feel and enhancing discoverability. Experience the difference with animated elements that react to your interactions.
+Popular status bar options like swaybar and yambar, and most waybar configurations, don't communicate interactivity. Good UX design responds to mouse movements, providing a polished feel and enhancing discoverability. Experience the difference with animated elements that react to your interactions.
 
 <video controls="" src="/krats/waybar-sleek/raw/branch/master/docs/demonstration.webm">
 	<strong>Your browser does not support the HTML5 "video" tag.</strong>
