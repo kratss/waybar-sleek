@@ -2,8 +2,12 @@ A featureful, unobtrusive waybar configuration designed to be easily tweaked and
 
 # Animated
 Animates on hover to communicate interactability \
-Fast but smooth transitions feel natural without being slow \
-![Video](docs/right-module-2.webp)
+Smooth transitions add polish\
+Indicate active/inactive states at a glance
+
+<video controls="" src="/krats/waybar-elegent/raw/branch/master/demonstration.webm">
+	<strong>Your browser does not support the HTML5 "video" tag.</strong>
+</video>
 
 # Minimal
 Minimal design that expands contextually to show relevant information \
