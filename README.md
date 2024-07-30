@@ -9,7 +9,8 @@ Popular status bar options like swaybar and yambar, and most waybar configuratio
 </video>
 
 # Minimal
-This status bar features a minimalist design that expands contextually to display relevant information. This approach allows users to quickly identify active and inactive states at a glance, ensuring a streamlined workflow.
+This status bar features a minimalist design that expands contextually to display relevant information. This approach allows users to quickly identify active and inactive states at a glance, ensuring a streamlined workflow.\
+
 ![Unexpanded icons](docs/pink_right.webp) 
 ![Expanding bluetooth](docs/pink_right_hover_bluetooth.webp)
 ![Expanding wireplumber](docs/pink_right_hover_wireplumber.webp)
