@@ -1,22 +1,23 @@
-A featureful, unobtrusive waybar configuration designed to be easily tweaked and customized \
+# Sleek Waybar Configuration
+Introducing a feature-rich and unobtrusive Waybar configuration designed for seamless customization and effortless tweaking. This status bar enhances your desktop experience while maintaining a clean aesthetic.eful, unobtrusive waybar configuration designed to be easily tweaked and customized \
 
 # Animated
-Animates on hover to communicate interactability \
-Smooth transitions add polish\
-Indicate active/inactive states at a glance
+Popular status bar options like swaybar and yambar, and most waybar configurations, don't communicate interactivity. Good UX design responds to mouse movements, providing a polished feel and enhancing discoverability. Experience the difference with animated elements that react to your interactions.
 
-<video controls="" src="/krats/waybar-elegent/raw/branch/master/demonstration.webm">
+<video controls="" src="/krats/waybar-sleek/raw/branch/master/docs/demonstration.webm">
 	<strong>Your browser does not support the HTML5 "video" tag.</strong>
 </video>
 
 # Minimal
-Minimal design that expands contextually to show relevant information \
+This status bar features a minimalist design that expands contextually to display relevant information. This approach allows users to quickly identify active and inactive states at a glance, ensuring a streamlined workflow.\
+
 ![Unexpanded icons](docs/pink_right.webp) 
 ![Expanding bluetooth](docs/pink_right_hover_bluetooth.webp)
 ![Expanding wireplumber](docs/pink_right_hover_wireplumber.webp)
 
-# Easy to configure
-Edit the base color `@define-color base-bg #RRGGBB` in `style.css`, and the theme will adapt secondary colors \
+# Easy Configuration
+Simply edit the base color in style.css using the line @define-color base-bg #RRGGBB, and interactive colors will always match. Tailor your status bar to match your personal style effortlessly.
+
 ![Yellow theme](docs/yellow_right_hover_bluetooth.webp)
 ![Blue theme](docs/blue_right_hover_bluetooth.webp)
 ![Pink theme](docs/pink_right_hover_bluetooth.webp)
